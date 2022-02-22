@@ -40,7 +40,7 @@ namespace LandingRocket.Lib.Models
             return true;
         }
 
-        public static IEnumerable<Coordinate> Get_Neighbours(this Coordinate c)
+        public static IEnumerable<Coordinate> GetNeighboursAndSelf(this Coordinate c)
         {
             yield return new Coordinate(c.X - 1, c.Y - 1);
             yield return new Coordinate(c.X - 1, c.Y    );
